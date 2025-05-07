@@ -17,6 +17,7 @@ import { useRouter } from "expo-router";
 
 const width = Dimensions.get("window").width;
 
+// image data
 const data = [
   {
     image:
@@ -30,9 +31,9 @@ const data = [
   }
 ];
 
-const App = () => {
-  const ref = useRef<ICarouselInstance>(null);
-  const progress = useSharedValue<number>(0);
+const App = () => { // Main component
+  const ref = useRef<ICarouselInstance>(null); // Reference to the carousel instance
+  const progress = useSharedValue<number>(0); // Shared value for tracking the progress of the carousel
   const router = useRouter();
 
   const onPressPagination = (index: number) => {
@@ -93,7 +94,7 @@ const App = () => {
     </SafeAreaProvider>
   );
 };
-
+ // Main component that renders the login screen
 const styles = StyleSheet.create({
   container: {
     flex: 1,

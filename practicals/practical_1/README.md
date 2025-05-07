@@ -52,7 +52,9 @@ This implements in the root layout for an Expo Router-based React Native applica
 
 **Splash Screen Management**
 ![alt text](imagges/splashscreen1.png)
+   
    Used the ;
+   
    ```code
    SplashScreen.preventAutoHideAsync();
    ```

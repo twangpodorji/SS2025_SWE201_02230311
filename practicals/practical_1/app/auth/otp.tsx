@@ -13,10 +13,10 @@ import { router, useLocalSearchParams } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 
 export default function OTPScreen() {
-  const params = useLocalSearchParams();
+  const params = useLocalSearchParams(); // Extracting parameters from the URL
   const { phone, countryCode, method } = params;
   const [otp, setOtp] = useState(["", "", "", ""]);
-
+  // State to hold the OTP input
   const handleOtpChange = (text: string, index: number) => {
     const newOtp = [...otp];
     newOtp[index] = text;

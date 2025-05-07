@@ -30,7 +30,7 @@ export default function Splash() {
     prepare();
   }, []);
 
-  if (appIsReady) {
+  if (appIsReady) { // if the app is ready, navigate to the main screen
     return <Redirect href="/auth/login" />;
   }
 

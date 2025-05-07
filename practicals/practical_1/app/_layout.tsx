@@ -12,14 +12,14 @@ import { useColorScheme } from '@/hooks/useColorScheme';
 SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
-  const colorScheme = useColorScheme();
-  const [loaded] = useFonts({
+  const colorScheme = useColorScheme(); // using the custom hook to get the color scheme
+  const [loaded] = useFonts({ // loading custom fonts from assets/fonts
     SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
   });
 
   useEffect(() => {
     if (loaded) {
-      SplashScreen.hideAsync();
+      SplashScreen.hideAsync(); // hide the splash screen when the fonts are loaded
     }
   }, [loaded]);
 

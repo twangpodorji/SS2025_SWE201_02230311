@@ -51,6 +51,7 @@ For this practical is to develop a multipage application using the Expo Router.
 This implements in the root layout for an Expo Router-based React Native application. Its execution is as follows:
 
 **Splash Screen Management**
+
 ![alt text](imagges/splashscreen1.png)
    
    Used the ;
